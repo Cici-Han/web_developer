@@ -10,7 +10,7 @@
 
 
 <body>
-    <h1>about something</h1>
+    <h1>about something HTML</h1>
     <!-- comments are like this. -->
     <p>
         <strong> is a paragraph </strong>
@@ -18,8 +18,8 @@
         ratione atque beatae. Quasi, accusantium repellat nulla repellendus minus, voluptates suscipit dolores ipsam
         recusandae vero molestiae?
     </p>
-    <p>let's have a picture here. <img src="images\item2.png" alt="image" width="200px"></p>
-    <a href="http://www.baidu.com">Baidu link</a>
+    <p>let's have a picture here. <img src="images\item2.png" alt="image" width="200px">
+        <a href="http://www.baidu.com">Baidu link</a>
 
     <ol>
         <!-- we can nest lists -->
@@ -30,12 +30,13 @@
         <li>this is a unorder list</li>
         <li>second item</li>
     </ul>
+    </p>
+    <h2>some useful links:</h2>
     <p>
-        some useful links:
     <ul>
         <li>HTML Standard--https://html.spec.whatwg.org/multipage/named-characters.html</li>
-        <li></li>
-        <li></li>
+        <li>MMdn--https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</li>
+        <li>color --https://htmlcolorcodes.com/color-picker/</li>
     </ul>
     </p>
     <h2>Inline VS. Block elements</h2>
@@ -67,7 +68,7 @@
         <li>time: specific time and date.</li>
         <li>figure: pic </li>
     </ul>
-    </p>
+
     <!-- nav>ul>li*3>a{click me} -->
     <nav>
         <ul>
@@ -76,11 +77,108 @@
             <li><a href="">click me</a></li>
         </ul>
     </nav>
-
+    </p>
     <h2>HTML Tables</h2>
+    <p>
+        td: single cell. <br>
+        tr: table row. <br>
+        th: header. <br>
+        thead: table head. <br>
+        tbody: table body. <br>
+        tfood: table food. <br>
+        rowspan: how many row to take up.<br>
+        colspan: how many column to take up.<br>
 
 
-    <h2></h2>
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Animal</th>
+                <th colspan="2">Average mass</th>
+                <th rowspan="2">Flighted</th>
+            </tr>
+            <tr>
+                <th>KG</th>
+                <th>LB</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ostrich</td>
+                <td>104</td>
+                <td>230</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>130</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Forms Button Input Required</h2>
+    <p>
+        input: varies types <br>
+        label: <br>
+        button: if inside the form, the default function is to submit the form. <br>
+
+    <form action="">
+        <label for="username">Enter username?</label>
+        <input type="text" placeholder="type something" id="username"><br>
+        <label for="password">password?</label>
+        <input type="password" placeholder="password" id="password"><br>
+        <label for="color">pick a color</label>
+        <input type="color" id="color"> <br>
+        <label for="time">let's have a time</label>
+        <input type="time" id="time">
+        <button>
+            click
+        </button>
+    </form>
+    <form action="https://cn.bing.com/search">
+        <input type="text" name="q">
+        <button>Search Bing</button>
+    </form>
+    <form action="">
+        <input type="checkbox" name="check">
+        <label for="check">agree to everything!</label> <br>
+        <input type="radio" name="size" value="s" id="s"> <label for="s">S</label>
+        <input type="radio" name="size" value="m" id="m"> <label for="m">M</label>
+        <input type="radio" name="size" value="l" id="l"> <label for="l">L</label>
+        <br>
+        <label for="meal">select one X-meal-X</label>
+        <select name="meal" id="meal">
+            <option value="fish">Fish</option>
+            <option value="veg">Vegetarian</option>
+            <option value="steak">Steak</option>
+        </select>
+        <br>
+        <label for="cheese">Amount of Cheese:</label>
+        <input type="range" name="cheese" id="cheese" min="1" max="10">
+        <br>
+        <label for="">A text area</label>
+        <textarea name="" id="" cols="20" rows="5" placeholder="helloo~"></textarea>
+    </form>
+    <hr>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required> <br>
+        <label for="username">username</label>
+        <input type="text" id="username" name="username" minlength="5" required> <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <button>Submit</button>
+    </form>
+
+    </p>
+
+
+
     <h2></h2>
     <h2></h2>
     <h2></h2>
