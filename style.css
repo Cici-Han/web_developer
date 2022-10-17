@@ -1,0 +1,60 @@
+h1 {
+    color: royalblue;
+    letter-spacing: 10px;
+    font-family: papyrus, fantasy;
+    font-size
+}
+
+h2 {
+    color: teal;
+    text-decoration: rgb(153, 153, 46) underline wavy;
+}
+
+h2::first-letter {
+    font-size: 35px;
+}
+
+p {
+    color: olive;
+    line-height: 2;
+}
+
+p::selection {
+    color: rgb(156, 59, 21);
+}
+
+a {
+    background-color: rgb(170, 146, 146);
+    text-decoration: none;
+}
+
+div {
+    width: 350px;
+    background-color: burlywood;
+
+}
+
+#div2 {
+    background-color: rgb(177, 140, 37);
+    border-width: 10px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+    border-left-color: darkmagenta;
+
+}
+
+#div3 {
+    border: 4px dashed rgb(101, 10, 10);
+    border-radius: 66%;
+    padding: 20px;
+
+}
+
+h4 {
+    display: inline;
+}
+
+span {
+    background-color: blanchedalmond;
+}
